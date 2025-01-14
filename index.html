@@ -1,4 +1,122 @@
-<h1>Linux and Shell</h1>
-<h1>Networking Basics</h1>
-<h1>Git and Github</h1>
-<h1>Ansible (onging) </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSTrainings DevOps 7AM Batch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .collapsible {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .collapsible:after {
+            content: '\002B'; /* Plus sign */
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 10px;
+        }
+        .active:after {
+            content: "\2212"; /* Minus sign */
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .content a {
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .content a:hover {
+            background-color: #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CSTrainings DevOps 7AM Batch</h1>
+    </header>
+
+    <div class="container">
+        <h2>Recorded Videos</h2>
+
+        <button class="collapsible">Video 1: Introduction to DevOps</button>
+        <div class="content">
+            <a href="https://link-to-video1.com" target="_blank">Watch Video 1</a>
+        </div>
+
+        <button class="collapsible">Video 2: Continuous Integration</button>
+        <div class="content">
+            <a href="https://link-to-video2.com" target="_blank">Watch Video 2</a>
+        </div>
+
+        <button class="collapsible">Video 3: Docker Basics</button>
+        <div class="content">
+            <a href="https://link-to-video3.com" target="_blank">Watch Video 3</a>
+        </div>
+
+        <button class="collapsible">Video 4: Jenkins Setup</button>
+        <div class="content">
+            <a href="https://link-to-video4.com" target="_blank">Watch Video 4</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CSTrainings. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
