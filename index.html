@@ -21,16 +21,22 @@
         .container {
             padding: 20px;
         }
+        /* Collapsible Button Styling */
         .collapsible {
-            background-color: #3498db;
+            background-color: #FF5733; /* Vivid Orange */
             color: white;
             cursor: pointer;
-            padding: 10px;
+            padding: 12px;
             width: 100%;
             text-align: left;
             border: none;
             outline: none;
             font-size: 16px;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s;
+        }
+        .collapsible:hover {
+            background-color: #FF4500; /* Bright Red-Orange on hover */
         }
         .collapsible:after {
             content: '\002B'; /* Plus sign */
@@ -42,21 +48,25 @@
         .active:after {
             content: "\2212"; /* Minus sign */
         }
+        /* Content Section Styling */
         .content {
             padding: 0 18px;
             display: none;
             overflow: hidden;
-            background-color: #f1f1f1;
+            background-color: #F0E68C; /* Vivid Yellow */
+            border-radius: 5px; /* Rounded corners */
         }
         .content a {
             display: block;
-            color: #3498db;
+            color: #3498db; /* Vivid Blue */
             text-decoration: none;
             padding: 8px;
             margin: 5px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
         .content a:hover {
-            background-color: #ddd;
+            background-color: #1E90FF; /* Bright Blue on hover */
         }
         footer {
             text-align: center;
